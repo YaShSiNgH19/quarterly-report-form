@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sense International India Quarterly Report</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Sense International India Quarterly Report</h1>
+    <form id="reportForm">
+      <h2>Section – 1</h2>
+      <div class="form-group">
+        <label for="orgName">Name of the Organisation:</label>
+        <input type="text" id="orgName" name="orgName" required>
+      </div>
+      <div class="form-group">
+        <label for="reportingPeriod">Reporting Period:</label>
+        <input type="text" id="reportingPeriod" name="reportingPeriod" required>
+      </div>
+      <div class="form-group">
+        <label for="reportedBy">Reported By:</label>
+        <input type="text" id="reportedBy" name="reportedBy" required>
+      </div>
+      <!-- <div class="form-group">
+        <label for="signature">Signature:</label>
+        <input type="text" id="signature" name="signature" required>
+      </div>
+      <div class="form-group">
+        <label for="officeSeal">Office Seal:</label>
+        <input type="text" id="officeSeal" name="officeSeal" required>
+      </div> -->
+      <div class="form-group">
+        <label for="signature">Signature:</label>
+        <div class="image-upload" id="signatureUpload">
+          <input type="file" id="signatureInput" name="signature" accept="image/*" required>
+          <img src="placeholder.png" alt="Signature preview">
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="officeSeal">Office Seal:</label>
+        <div class="image-upload" id="officeSealUpload">
+          <input type="file" id="officeSealInput" name="officeSeal" accept="image/*" required>
+          <img src="placeholder.png" alt="Office Seal preview">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="summary">Summary of the Report (Maximum in 75 Words, in points):</label>
+        <textarea id="summary" name="summary" rows="3" maxlength="500" required></textarea>
+      </div>
+
+      <h2>Section - 1  Identification - Plan Vs Achievement</h2>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Age Group</th>
+              <th>New Identification Planned for the Year</th>
+              <th colspan="5">Target Achieved</th>
+              
+            </tr>
+            <tr>
+              <th></th>
+              <th></th>
+              <th>Q1</th>
+              <th>Q2</th>
+              <th>Q3</th>
+              <th>Q4</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="text" name="ageGroup1"></td>
+              <td><input type="number" name="planned1"></td>
+              
+              <td><input type="number" name="q1_1"></td>
+              <td><input type="number" name="q2_1"></td>
+              <td><input type="number" name="q3_1"></td>
+              <td><input type="number" name="q4_1"></td>
+              <td><input type="number" name="total1"></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="ageGroup2"></td>
+              <td><input type="number" name="planned2"></td>
+              
+              <td><input type="number" name="q1_2"></td>
+              <td><input type="number" name="q2_2"></td>
+              <td><input type="number" name="q3_2"></td>
+              <td><input type="number" name="q4_2"></td>
+              <td><input type="number" name="total2"></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="ageGroup3"></td>
+              <td><input type="number" name="planned3"></td>
+              
+              <td><input type="number" name="q1_3"></td>
+              <td><input type="number" name="q2_3"></td>
+              <td><input type="number" name="q3_3"></td>
+              <td><input type="number" name="q4_3"></td>
+              <td><input type="number" name="total3"></td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+
+      <h2>1(A) Provision of services in different set-up</h2>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th rowspan="4">Total number of Persons with deafblindness children and young adults receiving services</th>
+              <th colspan="6">Direct or regular services(receiving minimum 6 hrs of services in a week)
+              </th>
+              <th rowspan="2">Support services (only Counselling/ advice)</th>
+              <th rowspan="2">Total (Please mention the names in excel sheet shared separately)</th>
+            </tr>
+            <tr>
+              <th>Age Range</th>
+              <th>Home Based</th>
+              <th>CBR</th>
+              <th>Centre Based</th>
+              <th>Any Other Way</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Male</td>
+              <td>0 - 18 years</td>
+              <td><input type="number" name="HomeBased"></td>
+              <td><input type="number" name="CBR"></td>
+              <td><input type="number" name="Centre Based"></td>
+              <td><input type="number" name="Any Other Way"></td>
+              <td><input type="number" name="Total"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Male</td>
+              <td>18 years and above</td>
+              <td><input type="number" name="HomeBased"></td>
+              <td><input type="number" name="CBR"></td>
+              <td><input type="number" name="Centre Based"></td>
+              <td><input type="number" name="Any Other Way"></td>
+              <td><input type="number" name="Total"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Female</td>
+              <td>0 - 18 years</td>
+              <td><input type="number" name="HomeBased"></td>
+              <td><input type="number" name="CBR"></td>
+              <td><input type="number" name="Centre Based"></td>
+              <td><input type="number" name="Any Other Way"></td>
+              <td><input type="number" name="Total"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Female</td>
+              <td>18 years and above</td>
+              <td><input type="number" name="HomeBased"></td>
+              <td><input type="number" name="CBR"></td>
+              <td><input type="number" name="Centre Based"></td>
+              <td><input type="number" name="Any Other Way"></td>
+              <td><input type="number" name="Total"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>0 - 18 years</td>
+              <td><input type="number" name="HomeBased"></td>
+              <td><input type="number" name="CBR"></td>
+              <td><input type="number" name="Centre Based"></td>
+              <td><input type="number" name="Any Other Way"></td>
+              <td><input type="number" name="Total"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>18 years and above</td>
+              <td><input type="number" name="HomeBased"></td>
+              <td><input type="number" name="CBR"></td>
+              <td><input type="number" name="Centre Based"></td>
+              <td><input type="number" name="Any Other Way"></td>
+              <td><input type="number" name="Total"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>1(B) Early Learning Years (0-6 Years) ( Please mention the names in excel sheet format shared separately)</h2>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">No. of Children</th>
+            </tr>
+            <tr>
+              <th colspan="2">No. of children in last quarter</th>
+              <th colspan="2">New Identification</th>
+              <th colspan="2">Dropout</th>
+              <th colspan="2">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+            </tr>
+            <tr>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">Significant achievements during the reporting quarter</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea>Please mention only 5 major achievements from the project; for example,Started speech therapy, increased reachout of centre based programme,  introduction of new therapy or service for the children, organised any assessment camps, new equipment and learning material used for the children, etc. </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">Baby Screening Programme</th>
+            </tr>
+            <tr>
+              <th colspan="2">No. of babies assessed till last quarter</th>
+              <th colspan="2">No. of babies assessed during the quarter</th>
+              <th colspan="2">No. of babies included in EI</th>
+              <th colspan="2">Total babies in EI from baby screening programme</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+            </tr>
+            <tr>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">Learning and Challenges</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea>>Learnings (Any three)
+                Learning of organization or project staff regarding EI during the reporting period. </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">Aanganwadi Programme</th>
+            </tr>
+            <tr>
+              <th colspan="2">No. of children till last quarter</th>
+              <th colspan="2">New enrolment</th>
+              <th colspan="2">Dropout   (if any)</th>
+              <th colspan="2">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+            </tr>
+            <tr>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">Activities under Anganwadi and follow up for enrolment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea> (List out five major activities)
+                Example: Anganwadi worker's training; meetings; support in enrollment, etc
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">No. of IEPs developed / reviewed in the quarter </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea>Mention the existing IEP reviewed and New IEP developed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>1(C) Education Years (6 - 18 Years) (Please mention names in excel sheet shared separately)</h2>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">No. of Children</th>
+            </tr>
+            <tr>
+              <th colspan="2">No. of children in last quarter</th>
+              <th colspan="2">New Identification</th>
+              <th colspan="2">Dropout</th>
+              <th colspan="2">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+            </tr>
+            <tr>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">Major educational activities conducted </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea>Mention major five activities; for example new activities or teaching methodologies used by the educators etc</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">No. of IEPs developed / reviewed in the quarter </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea>Mention the existing IEP reviewed and New IEP developed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">Learning and Challenges</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea>Mention the learnings and challenges</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="1">No. of students</th>
+              <th colspan="2">No. of students in last quarter</th>
+              <th colspan="2">New Identification / Enrolment</th>
+              <th colspan="2">Dropout  (if any)</th>
+              <th colspan="2">Total</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Govt. School</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Pvt. School</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Higher Education (Under-Graduation and above)</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">Significant achievements and follow-ups under Inclusive Education programme</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea>Please mention any major three achievements and their follow-ups/ plan
+                Eg:Enrollment of children, significant  achievements of  meeting held with govt./ private school authorities/ education department and its output etc
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>1(D)Vocational Training and Income Generation Activities (18 years and above) (Please mention names in excel sheet shared separately)</h2>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">No. of Young Adults </th>
+            </tr>
+            <tr>
+              <th colspan="2">No. of young adults till last quarter in Vocational Training </th>
+              <th colspan="2">No. of young adults newly identified</th>
+              <th colspan="2">Dropout, if any 
+                (Please mention their names in Annexure 2)</th>
+              <th colspan="2">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+            </tr>
+            <tr>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td colspan="2">Sheltered Workshop</td>
+              <td colspan="2">Income Generation Activities</td>
+              <td colspan="2">Open Employment (Pvt)</td>
+              <td colspan="2">Govt Employment </td>
+            </tr>
+            <tr>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+            </tr>
+            <tr>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">Activities under Vocational Training Programme</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea>Please mention the types of trade chosen in vocational training programme along with the details of service users </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">Achievements and challenges under IGA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea>Achievements and Challenges (Please mention any five only)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Section 2:  Capacity Building (Families, Siblings, Teachers, Medical/ Para-medical staff, NGOs, etc)</h2>
+      <h2>2(A) Please provide the information such as- topics covered; name of organisations they belonged to; number of participants (M/F break-up); date of training; name of faculty and any follow-up planned against trainings:</h2>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">Training/ webinar/ online courses for Caregivers/ Family Members / Siblings during the quarter </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea>Include feedback of participants</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">Training/ webinars/ online courses attended by project staff during the quarter</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea>Include learning of project staff from the session also</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">Training or sensitisation for other NGO Professionals/ Anganwadi/ASHA workers  </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">Training for SMSA / Pvt School teachers on Inclusive Education</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">Training for Medical and Para-medical staff</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="8">1.	Mentoring Support
+                2.	Onsite Training 
+                3.	Project M&E  </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea>Suggestions (Any Major Five)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>2(B) Outcome and impact of the training events </h2>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Training Event</th>
+              <th>Outcome</th>
+              <th>Impact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>Section 3:  Networks Development (Families, Teachers and Young adults with Deafblindness)</h2>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="1">No. of Network Members </th>
+              <th colspan="2">Families (Prayaas)</th>
+              <th colspan="2">Teachers (Abhi – Prerna)</th>
+              <th colspan="2">Adult deafblind (Udaan)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+            </tr>
+            <tr>
+              <td>Till last quarter</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Newly Joined</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Dropout, if any (Please mention the details in the Annexure- 6)</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Local Networks meetings (Quarterly/monthly)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea>Date of meeting:
+                Number of participants (M/F break-up), 
+                Name of faculty/SII member present
+                Meeting Outcome 
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Meetings / activities attended; other than local</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Outings / picnics organised</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>Section 4 :  Schemes and Entitlements Benefits:</h2>
+      <h2>4(A) Through Govt. Sources</h2>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="1">Name of Schemes </th>
+              <th colspan="2">Till last quarter</th>
+              <th colspan="2">New Addition (Service users who availed govt. schemes/ entitlement in reporting quarter)</th>
+              <th colspan="2">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+            </tr>
+            <tr>
+              <td>Disability Certificate</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Disability Pension</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Unemployment allowance</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Travel Concession (Bus / Train)</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>MNREGA</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Voter ID</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Niramaya Health Insurance</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Nutrition Support</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Assistive Devices Hearing/Vision/Locomotor/ Communication etc</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Linkages with Aadhaar cards</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Linkages with UDID card</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Clinical Assessment</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Others</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Guardianship</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Toilet Construction</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>House Construction</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>4(B)Support through SII</h2>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="1">Category of benefits</th>
+              <th colspan="2">Till last quarter</th>
+              <th colspan="2">New Addition</th>
+              <th colspan="2">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+              <td>M</td>
+              <td>F</td>
+            </tr>
+            <tr>
+              <td>Travel allowance to children/ mobile reimbursement to service users</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Nutrition Support</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Medical Support</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Assistive Devices Hearing/Vision/Locomotor/ Communication etc</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Clinical Assessment (Neurological, Hearing & Vision)</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Others</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>Section 5 : Advocacy, Communication and Resource Mobilisation</h2>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Your efforts, achievement till now and plan in networking with other organisations in the state and region </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea>Maximum five achievements</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Advocacy with the Government (Health/ Education / Social Welfare/ Disability Commissioner/ Skill Development or any other)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea>Maximum five</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Communication materials produced on awareness generation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Resources mobilised locally or new grant applications made to sustain the project</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea>Please mention major three successes
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Accomplishments/ awards received</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Anti Bribery Policy & Anti Fraud Policy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Child and Vulnerable Adults Protection Policy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>Section 6 : Impact and Planning:</h2>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Significant change/improvement in any one or two of your deafblind service users during the reporting period. Please attach relevant photograph in JPEG format along with the report</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Significant change/improvement in attitude of families/community during the reporting period. 
+                Please write one or two examples with their original quotations 
+                </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Have you experienced any issues or events that have hindered the successful execution of your programme? 
+                If yes, how did you overcome the above problems? (for example, bus strikes, heavy rain, vacation period, illness of child, pandemic or family members etc.)
+                </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>What are the lessons learnt in implementing the project activities?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>What are your objectives and action plan for the next reporting period?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Impact of advocacy and networking efforts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>Section 7. Network Organization Activities</h2>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th rowspan="3">Numbers</th>
+              <th colspan="3">New Additions during reporting period</th>
+              <th colspan="2">Cumulative Total</th>
+            </tr>
+            <tr>
+              
+              <th>Age Group</th>
+              <th>Male</th>
+              <th>Female</th>
+              <th>Male</th>
+              <th>Female</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th rowspan="3">Children and Young Adults with deafblindness identified through partner organisations</th>
+              <td>0-6 yeras</td>
+              <td><input></td>
+              <td><input></td>
+              <td><input></td>
+              <td><input></td>
+            </tr>
+            <tr>
+              
+              <td>6-18 yeras</td>
+              <td><input></td>
+              <td><input></td>
+              <td><input></td>
+              <td><input></td>
+            </tr>
+            <tr>
+              
+              <td>18 yeras and above</td>
+              <td><input></td>
+              <td><input></td>
+              <td><input></td>
+              <td><input></td>
+            </tr>
+            <tr>
+              <th rowspan="1">Partners in the region/ State</th>
+              <td colspan="3"><input></td>
+              <td colspan="2"><input></td>
+            </tr>
+            <tr>
+              <th rowspan="1">Organisations sensitised</th>
+              <td colspan="3"><input></td>
+              <td colspan="2"><input></td>
+            </tr>
+            <tr>
+              <th rowspan="1">Organisations initiating work on deafblindness</th>
+              <td colspan="3"><input></td>
+              <td colspan="2"><input></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>Section 8. Impact Analysis of activities</h2>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="4">Enlist major group or individual educational activities (maximum five) that benefited children the most during this reporting period in home based, centre based or other settings (pls. specify other settings)</th>
+            </tr>
+            <tr>
+              <th>Name of the child(ren)</th>
+              <th>Activity</th>
+              <th>Nature of setting</th>
+              <th>Impact/ Benefits</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>8(A) Impact activities: Language and communication (Maximum Three)</h2>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Name of the child(ren)</th>
+              <th>Activity</th>
+              <th>Nature of setting</th>
+              <th>Impact/ Benefits</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>8(B) Impact activities:Motor activity(Maximum Three)</h2>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Name of the child(ren)</th>
+              <th>Activity</th>
+              <th>Nature of setting</th>
+              <th>Impact/ Benefits</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>8(C) Clinical & functional assessment conducted: Functional Assessment  for 71 PwDbs</h2>
+      <div class="form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Name of the Child</th>
+              <th>Area/s of assessment
+                Clinical/Functional
+                </th>
+              <th>Date of assessment </th>
+              <th>Assessed By (i.e. Paediatrician, Psychiatrist, PT, OT, ST, Audiologist etc.)</th>
+              <th>Recommendation and follow up actions taken</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>Annexures</h2>
+      <div class="form-group">
+        <table class="form-table">
+          <h3>S. No 1</h3>
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Family Name</th>
+              <th>Surname</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Date of Birth</th>
+              <th>Age</th>
+              <th>Gender</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Religion(Optional)</th>
+              <th>Postal Address</th>
+              <th>City/Village</th>
+              <th>State</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Father's name</th>
+              <th>Mother's Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Urban/Rural</th>
+              <th>Annual family income</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <thead>
+            <tr>
+              <th>
+                What kind of services is the person currently receiving 
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <td><textarea></textarea></td>
+          </tbody>
+        </table>
+      </div>
+      <div class = "form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Disability Profile</th>
+              <th>Congenital</th>
+              <th>Acquired</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Totally Blind</td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td>Totally Deaf  </td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td>Partially Sighted</td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td>Partially Hearing</td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>  
+          </tbody>
+          <tr>
+            <td>
+              Sensory issues
+            </td>
+            <td colspan="2"><textarea></textarea></td>
+          </tr>
+          <tr>
+            <td>Known cause(s) of disabilities</td>
+            <td colspan="2"><textarea></textarea></td>
+          </tr>
+          <tr>
+            <td>Any history of disability in the family</td>
+            <td colspan="2"><textarea></textarea></td>
+          </tr>
+          <tr>
+            <td>Programme enrolled in</td>
+            <td colspan="2"><textarea></textarea></td>
+          </tr>
+          <tr>
+            <td>Source of referral to programme</td>
+            <td colspan="2"><textarea></textarea></td>
+          </tr>
+          <tr>
+            <td>Date when entered programme:</td>
+            <td colspan="2"><textarea></textarea></td>
+          </tr>
+          <tr>
+            <td>Introduced about Networks (Local / National), if yes registered with Prayaas or Local body</td>
+            <td colspan="2"><textarea></textarea></td>
+          </tr>
+          <tr>
+            <td>Main Caregiver</td>
+            <td colspan="2"><textarea></textarea></td>
+          </tr>
+        </table>
+      </div>
+      <div class="form-group">
+        <table class="form-table">
+          <h3>S. No 2</h3>
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Family Name</th>
+              <th>Surname</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Date of Birth</th>
+              <th>Age</th>
+              <th>Gender</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Religion(Optional)</th>
+              <th>Postal Address</th>
+              <th>City/Village</th>
+              <th>State</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Father's name</th>
+              <th>Mother's Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Urban/Rural</th>
+              <th>Annual family income</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <thead>
+            <tr>
+              <th>
+                What kind of services is the person currently receiving 
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <td><textarea></textarea></td>
+          </tbody>
+        </table>
+      </div>
+      <div class = "form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Disability Profile</th>
+              <th>Congenital</th>
+              <th>Acquired</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Totally Blind</td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td>Totally Deaf  </td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td>Partially Sighted</td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td>Partially Hearing</td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>  
+          </tbody>
+          <tr>
+            <td>
+              Sensory issues
+            </td>
+            <td colspan="2"><textarea></textarea></td>
+          </tr>
+          <tr>
+            <td>Known cause(s) of disabilities</td>
+            <td colspan="2"><textarea></textarea></td>
+          </tr>
+          <tr>
+            <td>Any history of disability in the family</td>
+            <td colspan="2"><textarea></textarea></td>
+          </tr>
+          <tr>
+            <td>Programme enrolled in</td>
+            <td colspan="2"><textarea></textarea></td>
+          </tr>
+          <tr>
+            <td>Source of referral to programme</td>
+            <td colspan="2"><textarea></textarea></td>
+          </tr>
+          <tr>
+            <td>Date when entered programme:</td>
+            <td colspan="2"><textarea></textarea></td>
+          </tr>
+          <tr>
+            <td>Introduced about Networks (Local / National), if yes registered with Prayaas or Local body</td>
+            <td colspan="2"><textarea></textarea></td>
+          </tr>
+          <tr>
+            <td>Main Caregiver</td>
+            <td colspan="2"><textarea></textarea></td>
+          </tr>
+        </table>
+      </div>
+      <h3>Details of dropouts</h3>
+      <div class = "form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Name of the client</th>
+              <th>Date of Birth / Age</th>
+              <th>Gender</th>
+              <th>Reason for Dropout</th>
+              <th>Current status of the service user</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+        </table>
+      </div>
+      <h3>Annexure 4: Details of Staff</h3>
+      <div class = "form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Name of Staff</th>
+              <th>Designation</th>
+              <th>Working Since</th>
+              <th>Age/Gender</th>
+              <th>Full time/Part time/new addition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+        </table>
+      </div>
+      <h3>Annexure 5: Details of children with deafblindness/MSI who is availing education in an inclusive education setup through Samagra Shiksha/regular schools</h3>
+      <div class = "form-group">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Name of the child</th>
+              <th>Date of Birth/age</th>
+              <th>Gender</th>
+              <th>Enrolled in SMSA /Regular School. Please mention the name of the school</th>
+              <th>Standard of student receiving education</th>
+              <th>The child is presently in SII programme (Yes/No)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+        </table>
+      </div>
+      
+      
+
+
+
+      <!-- Submit Button and Response -->
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <div id="response"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
