@@ -11,7 +11,7 @@ document.getElementById('reportForm').addEventListener('submit', function(e) {
     });
   
     // Send form data to your Google Apps Script URL
-    const url = 'https://script.google.com/macros/s/AKfycbzmQn_875iGPQSugVfcncHtRxbNoWgRZTKXTpg4EHX_1C7eGQwut7v4tkjYTHUFVE3LcA/exec'; // Replace this with your actual URL
+    const url = 'https://script.google.com/macros/s/AKfycbzO0d_N81bWPlJspiFt5XKlbHm6dOVM3SdCGUhx0AJwsku3cD77DCH9julGJLLpa9niow/exec'; // Replace this with your actual URL
     fetch(url, {
       method: 'POST',
       body: JSON.stringify(jsonData),
